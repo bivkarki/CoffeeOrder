@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/coffee"
+    android:scaleType="centerCrop"
+    >
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Enter your name here"
+        android:inputType="text"
+        android:textSize="25dp"
+        android:textColorHint="#000"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:letterSpacing="0.1"
+        android:layout_marginLeft="8dp"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/B1"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+
+            android:onClick="Dec"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="26sp" />
+        <TextView
+            android:id="@+id/quant"
+            android:layout_width="55dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/TV1"
+            android:layout_marginTop="16dp"
+
+            android:paddingLeft="22dp"
+            android:paddingTop="8dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="29sp" />
+
+        <Button
+            android:id="@+id/B2"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+
+            android:onClick="Inc"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="+"
+            android:textColor="@android:color/black"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:letterSpacing="0.1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Price (5$ for a cup)"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/price_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:letterSpacing="0.10"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="#70FFA5"
+        />
+    <Button android:text="Order"
+        android:id="@+id/B3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="26sp"
+        android:textColor="@android:color/black"
+        android:onClick="submitOrder"/>
+
+</LinearLayout>
